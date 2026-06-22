@@ -2,11 +2,65 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+@theme {
+  --color-fd-background: hsl(0 0% 98%);
+  --color-fd-foreground: hsl(0 0% 8%);
+
+  --color-fd-muted: hsl(0 0% 96%);
+  --color-fd-muted-foreground: hsl(0 0% 40%);
+
+  --color-fd-popover: hsl(0 0% 100%);
+  --color-fd-popover-foreground: hsl(0 0% 10%);
+
+  --color-fd-card: hsl(0 0% 97%);
+  --color-fd-card-foreground: hsl(0 0% 8%);
+
+  --color-fd-border: hsla(0, 0%, 0%, 0.08);
+
+  --color-fd-primary: hsl(0 65% 48%);
+  --color-fd-primary-foreground: hsl(0 0% 100%);
+
+  --color-fd-secondary: hsl(0 30% 94%);
+  --color-fd-secondary-foreground: hsl(0 65% 30%);
+
+  --color-fd-accent: hsl(0 70% 92%);
+  --color-fd-accent-foreground: hsl(0 70% 35%);
+
+  --color-fd-ring: hsl(0 65% 48%);
+}
+
+.dark {
+  --color-fd-background: hsl(0 0% 6%);
+  --color-fd-foreground: hsl(0 0% 94%);
+
+  --color-fd-muted: hsl(0 0% 10%);
+  --color-fd-muted-foreground: hsla(0, 0%, 75%, 0.8);
+
+  --color-fd-popover: hsl(0 0% 8%);
+  --color-fd-popover-foreground: hsl(0 0% 92%);
+
+  --color-fd-card: hsl(0 0% 9%);
+  --color-fd-card-foreground: hsl(0 0% 96%);
+
+  --color-fd-border: hsla(0, 0%, 100%, 0.08);
+
+  --color-fd-primary: hsl(0 70% 52%);
+  --color-fd-primary-foreground: hsl(0 0% 100%);
+
+  --color-fd-secondary: hsl(0 15% 14%);
+  --color-fd-secondary-foreground: hsl(0 0% 92%);
+
+  --color-fd-accent: hsl(0 35% 18%);
+  --color-fd-accent-foreground: hsl(0 80% 75%);
+
+  --color-fd-ring: hsl(0 70% 52%);
+}
+
 html {
   scrollbar-gutter: stable;
 }
 
 html > body[data-scroll-locked] {
-  margin-right: 0px !important;
-  --removed-body-scroll-bar-size: 0px !important;
+  margin-right: 0 !important;
+  --removed-body-scroll-bar-size: 0 !important;
 }

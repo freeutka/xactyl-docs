@@ -1,13 +1,34 @@
 ---
-title: Hello World
-description: Your first document
+title: Xactyl
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+import { Callout } from "fumadocs-ui/components/callout";
+import { Steps } from "fumadocs-ui/components/steps";
 
-## What is Next?
+<Callout type="warn">
+  Xactyl is currently in **alpha**. Bugs are expected and contributions are welcome.
+</Callout>
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
-</Cards>
+## Supported Operating Systems
+
+| Operating System | Version | Supported | Notes                            |
+| ---------------- | ------- | --------- | -------------------------------- |
+| Ubuntu           | 22.04   | ✅         | Requires additional repositories for PHP        |
+|                  | 24.04   | ✅         | MariaDB can be installed without extra repos |
+| RHEL / Rocky Linux / AlmaLinux      | 8       | ✅         | Extra repositories required      |
+|       | 9       | ✅         | —                                |
+| Debian           | 11      | ✅         | 	[Debian Dependencies](https://pterodactyl.io/community/installation-guides/panel/debian.html) |
+|            | 12      | ✅         | 	[Debian Dependencies](https://pterodactyl.io/community/installation-guides/panel/debian.html) |
+|            | 13      | ✅         | 	[Debian Dependencies](https://pterodactyl.io/community/installation-guides/panel/debian.html) |
+
+---
+
+## Requirements
+
+Before installing Xactyl, make sure your server has:
+
+* **PHP** 8.3 with extensions: `cli`, `openssl`, `gd`, `mysql`, `PDO`, `mbstring`, `tokenizer`, `bcmath`, `xml`/`dom`, `curl`, `zip`, `fpm` (for NGINX)
+* **MySQL** 5.7.22+ or **MariaDB** 10.2+
+* **Redis** (`redis-server`)
+* A web server (Apache, NGINX, Caddy, etc.)
+* `curl`, `tar`, `unzip`, `git`, `composer v2`
